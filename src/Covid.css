@@ -1,0 +1,96 @@
+body {
+  background: dimgray;
+}
+
+h1 {
+  position: relative;
+  left: 40%;
+}
+
+h2 {
+  position: relative;
+  left: 35%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+}
+
+.country {
+  background-color: teal;
+}
+
+.recovered {
+  background-color: rosybrown;
+}
+
+.confirmed {
+  background-color: sandybrown;
+}
+
+.death {
+  background-color: sienna;
+}
+
+.active {
+  background-color: slategrey;
+}
+
+.updated {
+  background-color: tomato;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid seagreen;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 4px darkgreen;
+  padding: 5px;
+  margin: 5px;
+  width: 15rem;
+  height: 20rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.card_name {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px darkgrey;
+}
+
+.card_total {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For desktop: */
+  .country {
+    width: 17%;
+  }
+  .recovered {
+    width: 16.66%;
+  }
+  .confirmed {
+    width: 17%;
+  }
+  .death {
+    width: 17%;
+  }
+  .active {
+    width: 17%;
+  }
+  .updated {
+    width: 17%;
+  }
+}
